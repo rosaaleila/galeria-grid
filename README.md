@@ -4,6 +4,3 @@ Atividade realizada no [SENAI Jandira](https://jandira.sp.senai.br/) com objetiv
 
 ## WebSite
 O projeto pode ser acessado através do link: [Leila Rosa](https://rosaaleila.github.io/landing-page-1/).
-
-## Screenshot
-![](imgs/screenshot.png)
