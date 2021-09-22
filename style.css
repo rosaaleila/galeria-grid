@@ -1,0 +1,77 @@
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    color: blanchedalmond;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    color: whitesmoke;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    flex-grow: 1;
+}
+
+#logotipo {
+    width: 90%;
+    height: 70%;
+}
+
+.galeria {
+    display: grid;
+    padding: 15px;
+    gap: 5px;
+    grid-template-areas:
+    "img1 img2 img2 img3"
+    "img1 img4 img5 img3"
+    "img1 img6 img8 img8"
+    "img1 img7 img8 img8"
+    ;
+    grid-auto-rows: 20vh;
+}
+
+.galeria-imagens:nth-child(1) { grid-area: img1; }
+.galeria-imagens:nth-child(2) { grid-area: img2; }
+.galeria-imagens:nth-child(3) { grid-area: img3; }
+.galeria-imagens:nth-child(4) { grid-area: img4; }
+.galeria-imagens:nth-child(5) { grid-area: img5; }
+.galeria-imagens:nth-child(6) { grid-area: img6; }
+.galeria-imagens:nth-child(7) { grid-area: img7; }
+.galeria-imagens:nth-child(8) { grid-area: img8; }
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.galeria-imagens {
+    box-shadow: 2px 1px 50px rgb(4, 14, 24);
+}
+
+.galeria-imagens:hover {
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
